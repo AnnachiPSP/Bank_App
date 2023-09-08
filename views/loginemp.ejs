@@ -1,0 +1,23 @@
+<%- include('partials/headerone') -%>
+
+  <h1>Login as an Employee/Employer!?</h1>
+  <br>
+  <form action="/loginemp" method="post">
+    <div class="mb-2">
+      <label class="form-label">User ID</label>
+      <input type="text" class="form-control" name="userid">
+    </div>
+    <br>
+    <div class="mb-2">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" name="password">
+    </div>
+    <br><br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <br><br>
+  <% if(faultymsg){ %>
+    <p>Pls try again something went wrong!</p>
+  <% }; %>
+
+<%- include('partials/footerone') -%>

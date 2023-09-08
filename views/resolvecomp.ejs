@@ -1,0 +1,18 @@
+<%- include('partials/headertwo') -%>
+
+  <h1>Complains to be resolved</h1>
+  <br>
+  <form action="/resolvecomp" method="post">
+    <% for(var i = 0; i< results.length; i++){ %>
+      <br><br>
+      <div class="form-check">
+        <p>Complaint ID: <%= results[i].Complaint_ID %></p>
+        <p>Customer ID: <%= results[i].CustomerID %></p>
+        <p>Description: <%= results[i].Complain_Description %></p>
+      </div>
+    <% }; %>
+    <br><br><br>
+    <input class="form-control" type="text" name="resolved" placeholder="Enter the complain id to be resolved!">
+    <br><br>
+    <button class = "btn btn-primary" type="submit" name="button">SUBMIT</button>
+  </form>

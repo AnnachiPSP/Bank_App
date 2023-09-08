@@ -1,0 +1,9 @@
+<%- include('partials/headertwo') -%>
+
+  <% for(var i = 0; i< results.length; i++){ %>
+    <p>Customer ID: <%= results[i].customer_id %></p>
+    <p>Customer Name: <%= results[i].First_Name %> <%= results[i].Last_Name %></p>
+    <br>
+  <% } %>
+
+<%- include('partials/footerone') -%>

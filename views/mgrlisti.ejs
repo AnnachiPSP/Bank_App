@@ -1,0 +1,14 @@
+<%- include('partials/headertwo') -%>
+
+  <h3> List of Employees under the selected manager is as follows: </h3>
+  <br>
+  <% for(var i = 0;i < results[0].length; i++){ %>
+    <p> Emplyee ID: <%= results[0][i].Emp_ID %> </p>
+    <p> Employee Name: <%= results[0][i].Emp_Name %> </p>
+    <p> Branch ID: <%= results[0][i].Branch_ID %> </p>
+    <p> Date of Join: <%= results[0][i].DOJ %> </p>
+    <p> Post: <%= results[0][i].Designation %> </p>
+    <br><br>
+  <% } %>
+
+<%- include('partials/footerone') -%>

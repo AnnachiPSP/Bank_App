@@ -1,0 +1,24 @@
+<%- include('partials/headerone') -%>
+
+  <h1>Login as a Customer!?</h1>
+  <br>
+  <form action="/logincust" method="post">
+    <div class="mb-2">
+      <label class="form-label">User ID</label>
+      <input type="text" class="form-control" name="userid">
+    </div>
+    <br>
+    <div class="mb-2">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" name="password">
+    </div>
+    <br><br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <br><br>
+  <% if(faulter1){ %>
+    <p>Pls try again something went wrong!</p>
+  <% }; %>
+  <a href="/forgotpass">Forgot password?</a>  
+
+<%- include('partials/footerone') -%>

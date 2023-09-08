@@ -1,0 +1,14 @@
+<%- include('partials/headertwo') -%>
+
+  <h3> Loan Details of <%= results[0].First_Name %> <%= results[0].Last_Name %> are as follows </h3>
+  <br>
+  <% for(var i = 0;i < results[0].length; i++){ %>
+    <p> Loan Type: <%= results[0][i].Loan_Type %> </p>
+    <p> Loan Status: <%= results[0][i].Loan_Status %> </p>
+    <p> Amount Taken: <%= results[0][i].Amount_taken %> </p>
+    <p> Amount Paid: <%= results[0][i].Amount_paid %> </p>
+    <p> Amount To Return: <%= results[0][i].Amount_to_return %> </p>
+    <br><br>
+  <% } %>
+
+<%- include('partials/footerone') -%>

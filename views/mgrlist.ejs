@@ -1,0 +1,15 @@
+<%- include('partials/headertwo') -%>
+
+  <h1>Enter the Employer ID of the Manager You want to check for</h1>
+  <br>
+  <form action="/mgrlist" method="post">
+    <div class="mb-1">
+      <label class="form-label">Employee ID</label>
+      <input type="text" class="form-control" name="userid">
+    </div>
+    <br><br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <br>
+
+<%- include('partials/footerone') -%>

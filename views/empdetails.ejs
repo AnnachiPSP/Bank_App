@@ -1,0 +1,12 @@
+<%- include('partials/headertwo') -%>
+
+  <h1>Your breif details are as follows:</h1>
+  <br>
+  <p> Full name: <%= results[0].Emp_Name %> </p>
+  <p> User name: <%= results[0].User_ID %> </p>
+  <p> Your Unique ID: <%= results[0].Emp_ID %></p>
+  <p> The Date you Joined as an Employee: <%= results[0].DOJ %> </p>
+  <p> Your Role: <%= results[0].Designation %> </p>
+  <p> The branch you work in: <%= results[0].City %>, <%= results[0].State %>, <%= results[0].Pincode %></p>
+
+<%- include('partials/footerone') -%>

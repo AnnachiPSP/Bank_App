@@ -1,0 +1,12 @@
+<%- include('partials/headertwo') -%>
+  <br>
+  <h1> Details of respective customer is </h1>
+  <br><br>
+  <% for(var i = 0; i<results.length; i++){ %>
+    <p> CustomerID: <%= results[i].CustomerID %> </p>
+    <p> Full Name: <%= results[i].First_Name %> <%= results[i].Last_Name %> </p>
+    <p> From: <%= results[i].Street %>, <%= results[i].City %>, <%= results[i].State %>, <%= results[i].Pincode %></p>
+    <p> DOB: <%= results[i].DOB %></p>
+  <% } %>
+
+<%- include('partials/footerone') -%>

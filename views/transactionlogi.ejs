@@ -1,0 +1,10 @@
+<%- include('partials/headertwo') -%>
+
+  <h3> transaction Details of <%= results[0].AccountNo %> are as follows </h3>
+  <br>
+  <% for(var i = 0;i < results.length; i++){ %>
+    <p> Amount: <%= results[i].Amount %> </p>
+    <br>
+  <% } %>
+
+<%- include('partials/footerone') -%>

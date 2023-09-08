@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Gramin Bank</title>
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">GRAMIN BANK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/homecust">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/bankacc">BANK ACCOUNT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/loanstart">START LOAN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/availservices">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/availcomplaint">COMPLAINT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/updation">UPDATE PROFILE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">LOG OUT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <body>
+    <div class="container">
+      <br><br>
+
+      <form action="/loanstart" method="post">
+
+        <div class="form-floating mb-3">
+          <input type="number" class="form-control" id="floatingInput" name="brid">
+          <label for="floatingInput">Branch_ID</label>
+        </div>
+        <br>
+        <p>Types of Loan... Please Type one of them needed below</p>
+        <br>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" name="loantype">
+          <label for="floatingInput">Loan Type</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" name="time">
+          <label for="floatingInput">Duration</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" name="amt_needed">
+          <label for="floatingInput">Amount Needed</label>
+        </div>
+        <button type="submit" name="button">ENTER</button>
+
+
+      </form>
+
+
+<%- include('partials/footerone') -%>

@@ -1,0 +1,12 @@
+<%- include('partials/headertwo') -%>
+
+  <br>
+  <h1> Details of respective customer is </h1>
+  <br><br>
+  <% for(var i = 0; i<results.length; i++){ %>
+    <p> CustomerID: <%= results[i].CustomerID %> </p>
+    <p> Balance: <%= results[i].Balance %></p>
+    <p> Date of opening: <%= results[i].Date_of_opening %></p>
+  <% } %>
+
+<%- include('partials/footerone') -%>
